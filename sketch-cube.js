@@ -1,8 +1,8 @@
 function setup() {
-createCanvas(500,500);
+createCanvas(windowWidth,windowHeight);
 noLoop()
 rectMode(CENTER);
-background(222);
+// background(222);
 stroke('blue')
 fill('pink')
 }
@@ -43,7 +43,7 @@ vertex(- pointA , - pointB)
 endShape(CLOSE)
 
 // left side squre
-strokeWeight(2);
+strokeWeight(4);
 beginShape();
 vertex(- pointA , - pointB)
 vertex(- recW2 , - recH2)
@@ -67,7 +67,7 @@ line(pointA1 , - pointB , - pointA , - pointB)
 line(- recW2 , - recH2 , recW2 ,- recH2)
 
 
-strokeWeight(5)
+strokeWeight(10)
 point(- pointA , - pointB)
 point(- recW2 , - recH2)
 point(- pointA1 , pointB)
@@ -78,10 +78,13 @@ point(pointA1 , - pointB)
 point(recW2 ,- recH2)
 
 pop()
-
-
-
 }
 
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
 
-
+function mousePressed() {
+    clear();
+    redraw();
+  }
