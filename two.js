@@ -5,7 +5,9 @@ strokeWeight(3)
 }
 
 function draw() {
-  // background(220);
+
+  background("pink");
+  stroke('blue');
  
 // let itteration = 10;
 let blockW = windowWidth /25;
@@ -21,6 +23,7 @@ else {
 } }
 
 // end  draw
+// frameRate(1);
 }
 
 function windowResized() {
