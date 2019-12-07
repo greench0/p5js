@@ -43,7 +43,7 @@ vertex(- pointA , - pointB)
 endShape(CLOSE)
 
 // left side squre
-strokeWeight(4);
+strokeWeight(3);
 beginShape();
 vertex(- pointA , - pointB)
 vertex(- recW2 , - recH2)
@@ -67,7 +67,7 @@ line(pointA1 , - pointB , - pointA , - pointB)
 line(- recW2 , - recH2 , recW2 ,- recH2)
 
 
-strokeWeight(10)
+strokeWeight(8)
 point(- pointA , - pointB)
 point(- recW2 , - recH2)
 point(- pointA1 , pointB)
